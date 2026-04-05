@@ -8,6 +8,3 @@ vim.keymap.set("n", "<leader>ff", function()
     find_command = { "rg", "--files", "--hidden", "-g", "!.git" },
   })
 end, { desc = "Find files including hidden" })
-
---- Este keymap deixa disponivel o atalho do Avante mesmo que ele ainda não esteja carregado
-vim.keymap.set("n", "<leader>aa", "<cmd>AvanteAsk<CR>", { desc = "Load and execute AvanteAsk" })
